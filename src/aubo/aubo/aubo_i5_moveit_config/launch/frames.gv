@@ -1,0 +1,15 @@
+digraph G {
+"pedestal_Link" -> "base_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1572332455.757 sec old)\nBuffer length: 0.000 sec\n"];
+"world" -> "pedestal_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1572332455.757 sec old)\nBuffer length: 0.000 sec\n"];
+"wrist3_Link" -> "camera_link"[label="Broadcaster: /realsen_with_aubo_eye_on_hand/handeye_publisher_lihongwen_911K_22301_4073175212577905165\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1572332455.757 sec old)\nBuffer length: 0.000 sec\n"];
+"wrist2_Link" -> "wrist3_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 31.582 Hz\nMost recent transform: 1572332455.750 ( 0.006 sec old)\nBuffer length: 4.971 sec\n"];
+"upperArm_Link" -> "foreArm_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 31.582 Hz\nMost recent transform: 1572332455.750 ( 0.006 sec old)\nBuffer length: 4.971 sec\n"];
+"shoulder_Link" -> "upperArm_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 31.582 Hz\nMost recent transform: 1572332455.750 ( 0.006 sec old)\nBuffer length: 4.971 sec\n"];
+"base_link" -> "shoulder_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 31.582 Hz\nMost recent transform: 1572332455.750 ( 0.006 sec old)\nBuffer length: 4.971 sec\n"];
+"foreArm_Link" -> "wrist1_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 31.582 Hz\nMost recent transform: 1572332455.750 ( 0.006 sec old)\nBuffer length: 4.971 sec\n"];
+"wrist1_Link" -> "wrist2_Link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 31.582 Hz\nMost recent transform: 1572332455.750 ( 0.006 sec old)\nBuffer length: 4.971 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1572332455.757"[ shape=plaintext ] ;
+ }->"world";
+}
