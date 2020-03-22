@@ -26,7 +26,7 @@ roslaunch control maubo_pick_put.launch
 
    - 抓取程序
 
-   3. 抓取控制基于moveit，可能需要事先安装moveit各类pkg
+ 3. 抓取控制基于moveit，可能需要事先安装moveit各类pkg
 
       
 
